@@ -1,0 +1,368 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="css/common.css" rel="stylesheet" />
+<link href="css/index.css" rel="stylesheet" />
+<script src="js/jquery-1.7.2.js"></script>
+<script>
+$(function (){
+	$('.click li').click(function (){
+		$('.click li').removeClass('active');
+		$(this).addClass('active');	
+		$('.btn a').hide();
+		$('.btn a').eq($(this).index()).show();
+	});	
+});
+</script>
+</head>
+
+<body>
+	<div class="hd wrap">
+    	<div class="box">
+        	<div class="btn clearFix">
+            	<a class="fl" href="javascript:;"><img src="images/slider-1.jpg" alt="" /></a>
+                <a class="fl" href="javascript:;"><img src="images/slider-2.jpg" alt="" /></a>
+                <a class="fl" href="javascript:;"><img src="images/slider-3.jpg" alt="" /></a>
+                <a class="fl" href="javascript:;"><img src="images/slider-4.jpg" alt="" /></a>
+                <a class="fl" href="javascript:;"><img src="images/slider-5.jpg" alt="" /></a>
+                <a class="fl" href="javascript:;"><img src="images/slider-6.jpg" alt="" /></a>
+                <a class="fl" href="javascript:;"><img src="images/slider-7.jpg" alt="" /></a>
+                <a class="fl" href="javascript:;"><img src="images/slider-8.jpg" alt="" /></a>
+            </div>
+            <ul class="click clearFix">
+            	<li class="fl active"></li>
+                <li class="fl"></li>
+                <li class="fl"></li>
+                <li class="fl"></li>
+                <li class="fl"></li>
+                <li class="fl"></li>
+                <li class="fl"></li>
+                <li class="fl"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="logo wrap clearFix">
+    	<h2 class="fl">天猫</h2>
+        <img class="fl" src="images/logo.png" alt="" />
+    </div>
+    <div class="serach wrap clearFix">
+    	<input placeholder="搜索天猫商品/店铺" class="text fl" type="text" />
+        <input class="sub fr" type="submit" value="" />
+    </div>
+    <div class="nav wrap">
+    	<ul class="clearFix">
+        	<li class="fl clearFix">
+            	<a class="fl" href="javascript:;">
+                <img src="images/icon1.png" />
+                <span>商品类目</span>
+            </a>
+            <span class="line fl"></span>
+            </li>
+            <li class="fl clearFix">
+            	<a class="fl" href="javascript:;">
+                <img src="images/icon2.png" />
+                <span>商品类目</span>
+            </a>
+            <span class="line fl"></span>
+            </li>
+            <li class="fl clearFix">
+            	<a class="fl" href="javascript:;">
+                <img src="images/icon3.png" />
+                <span>商品类目</span>
+            </a>
+            <span class="line fl"></span>
+            </li>
+            <li class="fl clearFix">
+            	<a class="fl" href="javascript:;">
+                <img src="images/icon4.png" />
+                <span>商品类目</span>
+            </a>
+            <span class="line fl"></span>
+            </li>
+            <li class="fl clearFix">
+            	<a class="fl" href="javascript:;">
+                <img src="images/icon5.png" />
+                <span>商品类目</span>
+            </a>
+            <span class="line fl"></span>
+            </li>
+            <li class="fl clearFix">
+            	<a class="fl" href="javascript:;">
+                <img src="images/icon6.png" />
+                <span>商品类目</span>
+            </a>
+            <span class="line fl"></span>
+            </li>
+            <li class="fl clearFix">
+            	<a class="fl" href="javascript:;">
+                <img src="images/icon7.png" />
+                <span>商品类目</span>
+            </a>
+            <span class="line fl"></span>
+            </li>
+            <li class="fl clearFix">
+            	<a class="fl" href="javascript:;">
+                <img src="images/icon8.png" />
+                <span>商品类目</span>
+            </a>
+            <span class="line fl"></span>
+            </li>
+        </ul>
+    </div>
+    <div class="main wrap clearFix">
+    	<div class="main-top clearFix">
+        	<div class="tit fl">
+            	<span>瞄一眼</span>
+                <a href="javascript:;">限时抢购</a>
+            </div>
+            <img class="fl" src="images/take_look_img.jpg" alt="" />
+            <div class="main-right fl">
+            	<p><a href="javascript:;">小碎花雪纺7分连体裤</a></p>
+                <p>剩余 01:02:05</p>
+                <p>疯抢价<span>￥69</span> 原价:￥198</p>
+            </div>
+            <a class="more fr" href="javascript:;">更多 ></a>
+        </div>
+        <ul class="main-c clearFix">
+        	<li class="fl clearFix">
+            	<img class="fl" src="images/hot-1.jpg" alt="" />
+            	<div class="main-cr fl">
+                    <p><a href="javascript:;">喵鲜生</a></p>
+                    <p>进口食材</p>
+                    <p>全场包邮</p>
+            	</div>
+            </li>
+            <li class="fl clearFix">
+            	<img class="fl" src="images/hot-1.jpg" alt="" />
+            	<div class="main-cr fl">
+                    <p><a href="javascript:;">喵鲜生</a></p>
+                    <p>进口食材</p>
+                    <p>全场包邮</p>
+            	</div>
+            </li>
+            <li class="fl clearFix">
+            	<img class="fl" src="images/hot-1.jpg" alt="" />
+            	<div class="main-cr fl">
+                    <p><a href="javascript:;">喵鲜生</a></p>
+                    <p>进口食材</p>
+                    <p>全场包邮</p>
+            	</div>
+            </li>
+            <li class="fl clearFix">
+            	<img class="fl" src="images/hot-1.jpg" alt="" />
+            	<div class="main-cr fl">
+                    <p><a href="javascript:;">喵鲜生</a></p>
+                    <p>进口食材</p>
+                    <p>全场包邮</p>
+            	</div>
+            </li>
+            <li class="fl clearFix">
+            	<img class="fl" src="images/hot-1.jpg" alt="" />
+            	<div class="main-cr fl">
+                    <p><a href="javascript:;">喵鲜生</a></p>
+                    <p>进口食材</p>
+                    <p>全场包邮</p>
+            	</div>
+            </li>
+            <li class="fl clearFix">
+            	<img class="fl" src="images/hot-1.jpg" alt="" />
+            	<div class="main-cr fl">
+                    <p><a href="javascript:;">喵鲜生</a></p>
+                    <p>进口食材</p>
+                    <p>全场包邮</p>
+            	</div>
+            </li>
+        </ul>
+    </div>
+    <div class="list wrap clearFix">
+    	<a class="fl" href="javascript:;"><img class="big" src="images/item_img_big_1.jpg" alt="" /></a>
+        <div class="list-right fl">
+        	<a class="pos" href="javascript:;">春夏新品</a>
+            <img src="images/item_img_sm_1.jpg">
+        </div>
+        <div class="list-right bbn fl">
+        	<a class="pos" href="javascript:;">春夏新品</a>
+            <img src="images/item_img_sm_1.jpg">
+        </div>
+        <div class="list-b fl clearFix">
+        	<a class="fl" href="javascript:;">连衣裙</a>
+            <a class="fl" href="javascript:;">衬衫</a>
+            <a class="fl" href="javascript:;">T恤</a>
+            <a class="fl" href="javascript:;">针织衫</a>
+            <a class="fl" href="javascript:;">卫衣</a>
+            <a class="fl" href="javascript:;">短外套</a>
+            <a class="fl" href="javascript:;">雪纺衫</a>
+            <a class="fl" href="javascript:;">休闲裤</a>
+            <a class="fl" href="javascript:;">牛仔裤</a>
+        </div>
+    </div>
+    <div class="list wrap clearFix">
+    	<a class="fl" href="javascript:;"><img class="big" src="images/item_img_big_1.jpg" alt="" /></a>
+        <div class="list-right fl">
+        	<a class="pos" href="javascript:;">春夏新品</a>
+            <img src="images/item_img_sm_1.jpg">
+        </div>
+        <div class="list-right bbn fl">
+        	<a class="pos" href="javascript:;">春夏新品</a>
+            <img src="images/item_img_sm_1.jpg">
+        </div>
+        <div class="list-b fl clearFix">
+        	<a class="fl" href="javascript:;">连衣裙</a>
+            <a class="fl" href="javascript:;">衬衫</a>
+            <a class="fl" href="javascript:;">T恤</a>
+            <a class="fl" href="javascript:;">针织衫</a>
+            <a class="fl" href="javascript:;">卫衣</a>
+            <a class="fl" href="javascript:;">短外套</a>
+            <a class="fl" href="javascript:;">雪纺衫</a>
+            <a class="fl" href="javascript:;">休闲裤</a>
+            <a class="fl" href="javascript:;">牛仔裤</a>
+        </div>
+    </div>
+    <div class="list wrap clearFix">
+    	<a class="fl" href="javascript:;"><img class="big" src="images/item_img_big_1.jpg" alt="" /></a>
+        <div class="list-right fl">
+        	<a class="pos" href="javascript:;">春夏新品</a>
+            <img src="images/item_img_sm_1.jpg">
+        </div>
+        <div class="list-right bbn fl">
+        	<a class="pos" href="javascript:;">春夏新品</a>
+            <img src="images/item_img_sm_1.jpg">
+        </div>
+        <div class="list-b fl clearFix">
+        	<a class="fl" href="javascript:;">连衣裙</a>
+            <a class="fl" href="javascript:;">衬衫</a>
+            <a class="fl" href="javascript:;">T恤</a>
+            <a class="fl" href="javascript:;">针织衫</a>
+            <a class="fl" href="javascript:;">卫衣</a>
+            <a class="fl" href="javascript:;">短外套</a>
+            <a class="fl" href="javascript:;">雪纺衫</a>
+            <a class="fl" href="javascript:;">休闲裤</a>
+            <a class="fl" href="javascript:;">牛仔裤</a>
+        </div>
+    </div>
+    <div class="list wrap clearFix">
+    	<a class="fl" href="javascript:;"><img class="big" src="images/item_img_big_1.jpg" alt="" /></a>
+        <div class="list-right fl">
+        	<a class="pos" href="javascript:;">春夏新品</a>
+            <img src="images/item_img_sm_1.jpg">
+        </div>
+        <div class="list-right bbn fl">
+        	<a class="pos" href="javascript:;">春夏新品</a>
+            <img src="images/item_img_sm_1.jpg">
+        </div>
+        <div class="list-b fl clearFix">
+        	<a class="fl" href="javascript:;">连衣裙</a>
+            <a class="fl" href="javascript:;">衬衫</a>
+            <a class="fl" href="javascript:;">T恤</a>
+            <a class="fl" href="javascript:;">针织衫</a>
+            <a class="fl" href="javascript:;">卫衣</a>
+            <a class="fl" href="javascript:;">短外套</a>
+            <a class="fl" href="javascript:;">雪纺衫</a>
+            <a class="fl" href="javascript:;">休闲裤</a>
+            <a class="fl" href="javascript:;">牛仔裤</a>
+        </div>
+    </div>
+    <div class="list wrap clearFix">
+    	<a class="fl" href="javascript:;"><img class="big" src="images/item_img_big_1.jpg" alt="" /></a>
+        <div class="list-right fl">
+        	<a class="pos" href="javascript:;">春夏新品</a>
+            <img src="images/item_img_sm_1.jpg">
+        </div>
+        <div class="list-right bbn fl">
+        	<a class="pos" href="javascript:;">春夏新品</a>
+            <img src="images/item_img_sm_1.jpg">
+        </div>
+        <div class="list-b fl clearFix">
+        	<a class="fl" href="javascript:;">连衣裙</a>
+            <a class="fl" href="javascript:;">衬衫</a>
+            <a class="fl" href="javascript:;">T恤</a>
+            <a class="fl" href="javascript:;">针织衫</a>
+            <a class="fl" href="javascript:;">卫衣</a>
+            <a class="fl" href="javascript:;">短外套</a>
+            <a class="fl" href="javascript:;">雪纺衫</a>
+            <a class="fl" href="javascript:;">休闲裤</a>
+            <a class="fl" href="javascript:;">牛仔裤</a>
+        </div>
+    </div>
+    <div class="list wrap clearFix">
+    	<a class="fl" href="javascript:;"><img class="big" src="images/item_img_big_1.jpg" alt="" /></a>
+        <div class="list-right fl">
+        	<a class="pos" href="javascript:;">春夏新品</a>
+            <img src="images/item_img_sm_1.jpg">
+        </div>
+        <div class="list-right bbn fl">
+        	<a class="pos" href="javascript:;">春夏新品</a>
+            <img src="images/item_img_sm_1.jpg">
+        </div>
+        <div class="list-b fl clearFix">
+        	<a class="fl" href="javascript:;">连衣裙</a>
+            <a class="fl" href="javascript:;">衬衫</a>
+            <a class="fl" href="javascript:;">T恤</a>
+            <a class="fl" href="javascript:;">针织衫</a>
+            <a class="fl" href="javascript:;">卫衣</a>
+            <a class="fl" href="javascript:;">短外套</a>
+            <a class="fl" href="javascript:;">雪纺衫</a>
+            <a class="fl" href="javascript:;">休闲裤</a>
+            <a class="fl" href="javascript:;">牛仔裤</a>
+        </div>
+    </div>
+    <div class="list wrap clearFix">
+    	<a class="fl" href="javascript:;"><img class="big" src="images/item_img_big_1.jpg" alt="" /></a>
+        <div class="list-right fl">
+        	<a class="pos" href="javascript:;">春夏新品</a>
+            <img src="images/item_img_sm_1.jpg">
+        </div>
+        <div class="list-right bbn fl">
+        	<a class="pos" href="javascript:;">春夏新品</a>
+            <img src="images/item_img_sm_1.jpg">
+        </div>
+        <div class="list-b fl clearFix">
+        	<a class="fl" href="javascript:;">连衣裙</a>
+            <a class="fl" href="javascript:;">衬衫</a>
+            <a class="fl" href="javascript:;">T恤</a>
+            <a class="fl" href="javascript:;">针织衫</a>
+            <a class="fl" href="javascript:;">卫衣</a>
+            <a class="fl" href="javascript:;">短外套</a>
+            <a class="fl" href="javascript:;">雪纺衫</a>
+            <a class="fl" href="javascript:;">休闲裤</a>
+            <a class="fl" href="javascript:;">牛仔裤</a>
+        </div>
+    </div>
+    <div class="list wrap clearFix">
+    	<a class="fl" href="javascript:;"><img class="big" src="images/item_img_big_1.jpg" alt="" /></a>
+        <div class="list-right fl">
+        	<a class="pos" href="javascript:;">春夏新品</a>
+            <img src="images/item_img_sm_1.jpg">
+        </div>
+        <div class="list-right bbn fl">
+        	<a class="pos" href="javascript:;">春夏新品</a>
+            <img src="images/item_img_sm_1.jpg">
+        </div>
+        <div class="list-b fl clearFix">
+        	<a class="fl" href="javascript:;">连衣裙</a>
+            <a class="fl" href="javascript:;">衬衫</a>
+            <a class="fl" href="javascript:;">T恤</a>
+            <a class="fl" href="javascript:;">针织衫</a>
+            <a class="fl" href="javascript:;">卫衣</a>
+            <a class="fl" href="javascript:;">短外套</a>
+            <a class="fl" href="javascript:;">雪纺衫</a>
+            <a class="fl" href="javascript:;">休闲裤</a>
+            <a class="fl" href="javascript:;">牛仔裤</a>
+        </div>
+    </div>
+    <div class="ad wrap"><img src="images/footer_img.jpg" alt="" /></div>
+    <div class="ft wrap">
+    	<div class="log fl clearFix">
+        	<a class="fl" href="javascript:;">登陆</a>
+            <a class="fl" href="javascript:;">注册</a>
+        </div>
+        <a class="fr ft-top" href="tianmao.html">返回顶部</a>
+    </div>
+    <div class="switch wrap">
+    	<a href="javascript:;">电脑版</a>
+        <p>Copyright ©2014 浙B2-20080224</p>
+    </div>
+</body>
+</html>

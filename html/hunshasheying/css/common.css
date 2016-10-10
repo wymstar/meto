@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+/*清楚默认样式*/
+body,h1, h2, h3, h4, h5, h6, p, ul, li, ol, dl, dt, dd, a, i, b, em, strong, img, input{margin:0; padding:0;}
+li{list-style:none;}
+a{text-decoration:none;}
+i, em{font-style:normal;}
+input{border:none; background:none; outline:none;}
+textarea{outline:none; resize:none;}
+/*清楚默认样式*/
+/*公用*/
+.clearFix:after{content:''; clear:both; display:block;}
+.clearFix{zoom:1;}
+.fl{float:left; display:inline;}
+.fr{float:right; display:inline;}
+
+body{font-size:12px; color:#666; font-family:'Microsoft YaHei';}
+.wrap{width:960px; margin:0 auto;}
+body img{border:none; display:block;}

@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{margin:0; padding:0;}
+div{width:960px; overflow:hidden; margin:0 auto;}
+ul{width:300px; margin-right:10px; float:left; border:1px solid red;}
+li{list-style:none; background:red; margin-bottom:10px; color:#fff; font-size:50px; font-weight:bold;}
+</style>
+<script>
+window.onload=function (){
+	var n=0;
+	var aUl=document.getElementsByTagName('ul');
+	var arr=[];
+	var arr1=['red', 'blue', 'yellow', '#ccc', 'green'];
+	for (var i=0; i<aUl.length; i++){
+		arr.push(aUl[i]);	
+	};
+	create();
+	window.onscroll=function (){
+		var h1=document.documentElement.scrollTop || document.body.scrollTop;
+		var h2=document.documentElement.clientHeight;
+		var h=h1+h2;
+		if (document.body.offsetHeight-100 <= h){
+			
+			
+			create();
+		}	
+	};
+	function create(){
+		n++;
+		if (n >= 6){
+			return false;	
+		}
+		for (var i=0; i<20; i++){
+		var oLi=document.createElement('li');
+		oLi.innerHTML=i;
+		oLi.style.background=arr1[n-1];
+		oLi.style.height=rnd(100,300)+'px';
+		
+		arr.sort(function (ul1,ul2){
+			return ul1.offsetHeight-ul2.offsetHeight;	
+		})
+		arr[0].appendChild(oLi);
+		}
+	}
+	function rnd(n,m){
+		return Math.floor(Math.random()*(m-n)+n);	
+	}
+};
+</script>
+</head>
+
+<body>
+	<div>
+        <ul></ul>
+        <ul></ul>
+        <ul></ul>
+    </div>
+</body>
+</html>

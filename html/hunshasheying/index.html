@@ -1,0 +1,529 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="css/common.css" rel="stylesheet" />
+<link href="css/index.css" rel="stylesheet" />
+<script src="js/jquery-1.7.2.js"></script>
+<script>
+$(function (){
+	$('.btn span').click(function (){
+		$('.btn span').removeClass('active');
+		$(this).addClass('active');	
+		$('.pos a').hide();
+		$('.pos a').eq($(this).index()).show();
+	});	
+});
+</script>
+<script>
+$(function (){
+	$('.m-c-l,.m-c-r').click(function (){
+		$('.m-c-l').removeClass('active');
+		$(this).addClass('active');	
+		$('.main-c-left a').hide();
+		$('.main-c-left a').eq($(this).index()).show();
+	});	
+});
+</script>
+</head>
+
+<body>
+	<div class="logo">
+    	<div class="wrap bg clearFix">
+        <h2 class="fl">婚纱摄影</h2>
+        <img class="fl" src="images/logo.gif" alt="" />
+        </div>
+    </div>
+    <div class="nav">
+    	<div class="wrap">
+        	<ul class="clearFix">
+            	<li class="fl clearFix">
+                	<a class="fl active" href="javascript:;">首页</a>
+                    <a class="fl" href="javascript:;">影楼报价</a>
+                    <a class="fl" href="javascript:;">作品展示</a>
+                    <a class="fl" href="javascript:;">场馆介绍</a>
+                    <a class="fl" href="javascript:;">客片欣赏</a>
+                    <a class="fl" href="javascript:;">积分商城</a>
+                    <a class="fl" href="javascript:;">官方汇款</a>
+                    <a class="fl" href="javascript:;">网络预约</a>
+                    <a class="fl" href="javascript:;">官方微博</a>
+                </li>
+                <li class="fr">
+                	<span>收藏</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="cont wrap">
+    	<div class="pos">
+            <a class="active" href="javascript:;"><img src="images/2014-11-03-15-01-17.jpg" alt="" /></a>
+            <a href="javascript:;"><img src="images/2014-05-01-10-31-56.jpg" alt="" /></a>
+            <a href="javascript:;"><img src="images/2014-08-01-13-31-59.jpg" alt="" /></a>
+            <a href="javascript:;"><img src="images/2014-08-14-12-13-01.jpg" alt="" /></a>
+            <div class="cont-bg"></div>
+            <div class="btn">
+            	<span class="active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div class="online wrap">
+    	<div class="qq-line clearFix">
+        	<a class="line1 fl" href="javascript:;"></a>
+            <a class="line2 fl" href="javascript:;"></a>
+            <a class="line2 fl" href="javascript:;"></a>
+            <a class="line4 fl" href="javascript:;"></a>
+        </div>
+    </div>
+    <div class="bna wrap clearFix">
+    	<a class="fl mr15" href="javascript:;"><img src="images/2014-11-03-16-19-29.jpg" alt="" width="310" height="310" /></a>
+        <a class="fl mr15" href="javascript:;"><img src="images/2014-11-03-16-18-57.jpg" alt="" width="310" height="310" /></a>
+        <a class="fl" href="javascript:;"><img src="images/2014-05-29-12-05-25.jpg" alt="" width="310" height="310" /></a>
+    </div>
+    <div class="ad wrap">
+    	<a href="javascript:;"><img src="images/banner.jpg" alt="" width="960" height="150" /></a>
+    </div>
+    <div class="main wrap">
+    	<div class="main-top clearFix">
+        	<i class="fl"></i>
+            <div class="fr tit clearFix">
+            	<a class="fl" href="javascript:;">北京</a>
+                <a class="fl" href="javascript:;">洛阳</a>
+                <a class="fl" href="javascript:;">西安</a>
+                <a class="fl" href="javascript:;">唐山</a>
+            </div>
+            <div class="fl title"></div>
+        </div>
+        <div class="main-c clearFix">
+        	<div class="main-c-left fl">
+            	<div class="w2000 clearFix">
+                    <a class="fl active" href="javascript:;">
+                        <img src="images/2013-05-31-16-44-38.jpg" width="310" height="496" alt="" />
+                        <div class="pos-b">场馆包间&nbsp;&nbsp;&nbsp;</div>
+                    </a>
+                    <a class="fl" href="javascript:;">
+                        <img src="images/2013-05-31-17-04-02.jpg" width="310" height="496" alt="" />
+                        <div class="pos-b">场馆&nbsp;&nbsp;&nbsp;</div>
+                    </a>
+                    <a class="fl" href="javascript:;">
+                        <img src="images/2013-05-31-17-15-02.jpg" width="310" height="496" alt="" />
+                        <div class="pos-b">场馆包间&nbsp;&nbsp;&nbsp;</div>
+                    </a>
+                    <a class="fl" href="javascript:;">
+                        <img src="images/2014-11-30-16-05-50.jpg" width="310" height="496" alt="" />
+                        <div class="pos-b">场馆包间&nbsp;&nbsp;&nbsp;</div>
+                    </a>
+                </div>
+                <span class="m-c-l"><</span>
+            	<span class="m-c-r">></span>
+            </div>
+            <div class="main-c-right fr">
+            	<ul class=" clearFix">
+                	<li class="fl clearFix mr15 mb20">
+                    	<a class="fl" href="javascript:;">
+                            <img src="images/2014-11-01-17-26-23.jpg" width="300" height="195" alt="" />
+                            <p>洛丽塔</p>
+                        </a>
+                    </li>
+                    <li class="fl clearFix mb20">
+                    	<a class="fl" href="javascript:;">
+                            <img src="images/2014-11-01-17-26-23.jpg" width="300" height="195" alt="" />
+                            <p>洛丽塔</p>
+                        </a>
+                    </li>
+                    <li class="fl clearFix mr15">
+                    	<a class="fl" href="javascript:;">
+                            <img src="images/2014-11-01-17-26-23.jpg" width="300" height="195" alt="" />
+                            <p>洛丽塔</p>
+                        </a>
+                    </li>
+                    <li class="fl clearFix">
+                    	<a class="fl" href="javascript:;">
+                            <img src="images/2014-11-01-17-26-23.jpg" width="300" height="195" alt="" />
+                            <p>洛丽塔</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main wrap">
+    	<div class="main-top clearFix">
+        	<i class="fl"></i>
+            <div class="fr tit clearFix">
+            	<a class="fl" href="javascript:;">北京</a>
+                <a class="fl" href="javascript:;">洛阳</a>
+                <a class="fl" href="javascript:;">西安</a>
+                <a class="fl" href="javascript:;">唐山</a>
+            </div>
+            <div class="fl title"></div>
+        </div>
+        <div class="main-c clearFix">
+        	<div class="main-c-left fl">
+            	<div class="w2000 clearFix">
+                    <a class="fl active" href="javascript:;">
+                        <img src="images/2013-05-31-16-44-38.jpg" width="310" height="496" alt="" />
+                        <div class="pos-b">场馆包间&nbsp;&nbsp;&nbsp;</div>
+                    </a>
+                    <a class="fl" href="javascript:;">
+                        <img src="images/2013-05-31-17-04-02.jpg" width="310" height="496" alt="" />
+                        <div class="pos-b">场馆&nbsp;&nbsp;&nbsp;</div>
+                    </a>
+                    <a class="fl" href="javascript:;">
+                        <img src="images/2013-05-31-17-15-02.jpg" width="310" height="496" alt="" />
+                        <div class="pos-b">场馆包间&nbsp;&nbsp;&nbsp;</div>
+                    </a>
+                    <a class="fl" href="javascript:;">
+                        <img src="images/2014-11-30-16-05-50.jpg" width="310" height="496" alt="" />
+                        <div class="pos-b">场馆包间&nbsp;&nbsp;&nbsp;</div>
+                    </a>
+                </div>
+                <span class="m-c-l"><</span>
+            	<span class="m-c-r">></span>
+            </div>
+            <div class="main-c-right fr">
+            	<ul class=" clearFix">
+                	<li class="fl clearFix mr15 mb20">
+                    	<a class="fl" href="javascript:;">
+                            <img src="images/2014-11-01-17-26-23.jpg" width="300" height="195" alt="" />
+                            <p>洛丽塔</p>
+                        </a>
+                    </li>
+                    <li class="fl clearFix mb20">
+                    	<a class="fl" href="javascript:;">
+                            <img src="images/2014-11-01-17-26-23.jpg" width="300" height="195" alt="" />
+                            <p>洛丽塔</p>
+                        </a>
+                    </li>
+                    <li class="fl clearFix mr15">
+                    	<a class="fl" href="javascript:;">
+                            <img src="images/2014-11-01-17-26-23.jpg" width="300" height="195" alt="" />
+                            <p>洛丽塔</p>
+                        </a>
+                    </li>
+                    <li class="fl clearFix">
+                    	<a class="fl" href="javascript:;">
+                            <img src="images/2014-11-01-17-26-23.jpg" width="300" height="195" alt="" />
+                            <p>洛丽塔</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="guest wrap">
+    	<div class="main-top clearFix">
+        	<i class="fl"></i>
+            <div class="fr tit clearFix">
+            	<a class="fl" href="javascript:;">北京</a>
+                <a class="fl" href="javascript:;">洛阳</a>
+                <a class="fl" href="javascript:;">西安</a>
+                <a class="fl" href="javascript:;">唐山</a>
+            </div>
+            <div class="fl title"></div>
+        </div>
+        <ul class="clearFix">
+        	<li class="fl clearFix">
+            	<a class="fl" href="javascript:;">
+                	<img src="images/2014-10-31-17-37-01.jpg" width="215" height="360" alt="" />
+                    <p>客片1</p>
+                </a>
+            </li>
+            <li class="fl clearFix">
+            	<a class="fl" href="javascript:;">
+                	<img src="images/2014-10-31-17-37-01.jpg" width="215" height="360" alt="" />
+                    <p>客片1</p>
+                </a>
+            </li>
+            <li class="fl clearFix">
+            	<a class="fl" href="javascript:;">
+                	<img src="images/2014-10-31-17-37-01.jpg" width="215" height="360" alt="" />
+                    <p>客片1</p>
+                </a>
+            </li>
+            <li class="fl clearFix">
+            	<a class="fl" href="javascript:;">
+                	<img src="images/2014-10-31-17-37-01.jpg" width="215" height="360" alt="" />
+                    <p>客片1</p>
+                </a>
+            </li>
+            <li class="fl clearFix">
+            	<a class="fl" href="javascript:;">
+                	<img src="images/2014-10-31-17-37-01.jpg" width="215" height="360" alt="" />
+                    <p>客片1</p>
+                </a>
+            </li>
+            <li class="fl clearFix">
+            	<a class="fl" href="javascript:;">
+                	<img src="images/2014-10-31-17-37-01.jpg" width="215" height="360" alt="" />
+                    <p>客片1</p>
+                </a>
+            </li>
+            <li class="fl clearFix">
+            	<a class="fl" href="javascript:;">
+                	<img src="images/2014-10-31-17-37-01.jpg" width="215" height="360" alt="" />
+                    <p>客片1</p>
+                </a>
+            </li>
+            <li class="fl clearFix">
+            	<a class="fl" href="javascript:;">
+                	<img src="images/2014-10-31-17-37-01.jpg" width="215" height="360" alt="" />
+                    <p>客片1</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="service wrap">
+    	<div class="main-top clearFix">
+        	<i class="fl"></i>
+            <div class="fr tit clearFix">
+            	<a class="fr" href="javascript:;">>> 更多服务</a>
+            </div>
+            <div class="fl title"></div>
+        </div>
+        <div class="s-cont clearFix">
+        	<div class="s-left fl clearFix">
+            	<a class="fl" href="javascript:;">
+                	<img class="fl" src="images/2015-07-08-13-59-07.jpg" width="300" height="195" alt="" />
+                    <p class="fl">原价26666，网络优惠价10999</p>
+                    <b class="fr">RMB:10999</b>
+                </a>
+            </div>
+            <div class="s-right fl clearFix">
+            	<h2 class="fl">蒙娜丽莎"克里斯丁会所</h2>
+                <p class="fl">测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字...</p>
+                <p class="fl">测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字!</p>
+                <p class="fl">测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字!</p>
+                <a class="fr" href="javascript:;">>>详情介绍</a>
+            </div>
+            <div class="s-bottom fl clearFix">
+            	<div class="s-b-p fl clearFix">
+                    <a class="fl" href="javascript:;">
+                        <img class="fl" src="images/2015-07-08-13-59-07.jpg" width="300" height="195" alt="" />
+                        <p class="fl">原价26666，网络优惠价10999</p>
+                        <b class="fr">RMB:10999</b>
+                    </a>
+            	</div>
+            	<div class="s-b-p fl clearFix">
+                    <a class="fl" href="javascript:;">
+                        <img class="fl" src="images/2015-07-08-13-59-07.jpg" width="300" height="195" alt="" />
+                        <p class="fl">原价26666，网络优惠价10999</p>
+                        <b class="fr">RMB:10999</b>
+                    </a>
+            	</div>
+            	<div class="s-b-p fl clearFix">
+                    <a class="fl" href="javascript:;">
+                        <img class="fl" src="images/2015-07-08-13-59-07.jpg" width="300" height="195" alt="" />
+                        <p class="fl">原价26666，网络优惠价10999</p>
+                        <b class="fr">RMB:10999</b>
+                    </a>
+            	</div>
+            </div>
+        </div>
+    </div>
+    <div class="integral wrap">
+    	<div class="main-top clearFix">
+        	<i class="fl"></i>
+            <div class="fl wb"></div>
+            <div class="fl tips"></div>
+            <div class="fl title"></div>
+        </div>
+        <div class="i-cont clearFix">
+            <div class="i-left fl">
+                <ul class="clearFix">
+                    <li class="fl clearFix">
+                        <a class="fl" href="javascript:;">
+                            <img src="images/2013-06-07-10-16-02.jpg" width="140" height="105" alt="" />
+                            <div class="i-tit">Chnael 香奈儿 	No5女人什么情况</div>
+                        </a>
+                    </li>
+                    <li class="fl clearFix">
+                        <a class="fl" href="javascript:;">
+                            <img src="images/2013-06-07-10-16-02.jpg" width="140" height="105" alt="" />
+                            <div class="i-tit">Chnael 香奈儿 	No5女人什么情况</div>
+                        </a>
+                    </li>
+                    <li class="fl clearFix">
+                        <a class="fl" href="javascript:;">
+                            <img src="images/2013-06-07-10-16-02.jpg" width="140" height="105" alt="" />
+                            <div class="i-tit">Chnael 香奈儿 	No5女人什么情况</div>
+                        </a>
+                    </li>
+                    <li class="fl clearFix">
+                        <a class="fl" href="javascript:;">
+                            <img src="images/2013-06-07-10-16-02.jpg" width="140" height="105" alt="" />
+                            <div class="i-tit">Chnael 香奈儿 	No5女人什么情况</div>
+                        </a>
+                    </li>
+                    <li class="fl clearFix">
+                        <a class="fl" href="javascript:;">
+                            <img src="images/2013-06-07-10-16-02.jpg" width="140" height="105" alt="" />
+                            <div class="i-tit">Chnael 香奈儿 	No5女人什么情况</div>
+                        </a>
+                    </li>
+                    <li class="fl clearFix">
+                        <a class="fl" href="javascript:;">
+                            <img src="images/2013-06-07-10-16-02.jpg" width="140" height="105" alt="" />
+                            <div class="i-tit">Chnael 香奈儿 	No5女人什么情况</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="i-center fl">
+            	<div class="i-c-t clearFix">
+             		<a class="fl i-logo" href="javascript:;"><img src="images/0.jpg" width="50" height="50" alt="" /></a>
+                    <div class="i-c-t-tit fl">
+                    	<p><a href="javascript:;">北京蒙娜丽莎摄影</a></p>
+                        <div><a href="javascript:;"><b>+</b>加关注</a></div>
+                    </div>  
+                </div>
+                <div class="i-c-c">
+                	<img src="images/wb.jpg" width="198" height="74" alt="" />
+                </div>
+                <div class="i-c-b">
+                	<div class="i-c-b-t clearFix">
+                    	<p class="fl">他的粉丝（126837）</p>
+                        <a class="fr" href="javascript:;">全部>></a>
+                    </div>
+                    <ul class="clearFix">
+                    	<li class="fl">
+                        	<a href="javascript:;">
+                            	<img src="images/0 (1).jpg" width="50" height="50" alt="" />
+                                <p>晨曦wrty</p>
+                            </a>
+                        </li>
+                        <li class="fl">
+                        	<a href="javascript:;">
+                            	<img src="images/0 (1).jpg" width="50" height="50" alt="" />
+                                <p>晨曦wrty</p>
+                            </a>
+                        </li>
+                        <li class="fl">
+                        	<a href="javascript:;">
+                            	<img src="images/0 (1).jpg" width="50" height="50" alt="" />
+                                <p>晨曦wrty</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="i-right">
+            	<ul>
+                	<li>
+                    	<a href="javascript:;">· 测试文字测试文字测试文字测试文字测试文字测试文字测试文字</a>
+                    </li>
+                    <li>
+                    	<a href="javascript:;">· 测试文字测试文字测试文字测试文字测试文字测试文字测试文字</a>
+                    </li>
+                    <li>
+                    	<a href="javascript:;">· 测试文字测试文字测试文字测试文字测试文字测试文字测试文字</a>
+                    </li>
+                    <li>
+                    	<a href="javascript:;">· 测试文字测试文字测试文字测试文字测试文字测试文字测试文字</a>
+                    </li>
+                    <li>
+                    	<a href="javascript:;">· 测试文字测试文字测试文字测试文字测试文字测试文字测试文字</a>
+                    </li>
+                    <li>
+                    	<a href="javascript:;">· 测试文字测试文字测试文字测试文字测试文字测试文字测试文字</a>
+                    </li>
+                    <li>
+                    	<a href="javascript:;">· 测试文字测试文字测试文字测试文字测试文字测试文字测试文字</a>
+                    </li>
+                    <li>
+                    	<a href="javascript:;">· 测试文字测试文字测试文字测试文字测试文字测试文字测试文字</a>
+                    </li>
+                    <li>
+                    	<a href="javascript:;">· 测试文字测试文字测试文字测试文字测试文字测试文字测试文字</a>
+                    </li>
+                    <li>
+                    	<a href="javascript:;">· 测试文字测试文字测试文字测试文字测试文字测试文字测试文字</a>
+                    </li>
+                </ul>
+            </div>
+       </div>
+    </div>
+    <div class="link wrap">
+    	<div class="main-top clearFix">
+        	<i class="fl"></i>
+            <div class="fr clearFix">
+            	<a class="fr" href="javascript:;">友情链接QQ：123456789</a>
+            </div>
+            <div class="fl title"></div>
+        </div>
+        <ul>
+        	<li class="clearFix">
+            	<a class="fl" href="javascript:;">北京儿童摄影</a>
+                <a class="fl" href="javascript:;">儿童摄影</a>
+                <a class="fl" href="javascript:;">北京儿童摄影</a>
+                <a class="fl" href="javascript:;">儿童摄影</a>
+                <a class="fl" href="javascript:;">北京儿童摄影</a>
+                <a class="fl" href="javascript:;">儿童摄影</a>
+                <a class="fl" href="javascript:;">北京儿童摄影</a>
+                <a class="fl" href="javascript:;">儿童摄影</a>
+                <a class="fl" href="javascript:;">北京儿童摄影</a>
+                <a class="fl" href="javascript:;">儿童摄影</a>
+                <a class="fl" href="javascript:;">北京儿童摄影</a>
+            </li>
+        </ul>
+    </div>
+    <div class="foot">
+    	<div class="f-cont wrap clearFix">
+        	<ul class="fl clearFix">
+            	<li class="fl clearFix">
+                	<h3 class="fl">蒙娜丽莎/主页</h3>
+                    <a class="fl" href="javascript:;">北京婚纱摄影网</a>
+                    <a class="fl" href="javascript:;">北京婚纱摄影网</a>
+                    <a class="fl" href="javascript:;">北京婚纱摄影网</a>
+                    <a class="fl" href="javascript:;">北京婚纱摄影网</a>
+                </li>
+                <li class="fl clearFix">
+                	<h3 class="fl">蒙娜丽莎/主页</h3>
+                    <a class="fl" href="javascript:;">北京婚纱摄影网</a>
+                    <a class="fl" href="javascript:;">北京婚纱摄影网</a>
+                    <a class="fl" href="javascript:;">北京婚纱摄影网</a>
+                    <a class="fl" href="javascript:;">北京婚纱摄影网</a>
+                </li>
+                <li class="fl clearFix">
+                	<h3 class="fl">蒙娜丽莎/主页</h3>
+                    <a class="fl" href="javascript:;">北京婚纱摄影网</a>
+                    <a class="fl" href="javascript:;">北京婚纱摄影网</a>
+                    <a class="fl" href="javascript:;">北京婚纱摄影网</a>
+                    <a class="fl" href="javascript:;">北京婚纱摄影网</a>
+                </li>
+                <li class="fl clearFix">
+                	<h3 class="fl">蒙娜丽莎/主页</h3>
+                    <a class="fl" href="javascript:;">北京婚纱摄影网</a>
+                    <a class="fl" href="javascript:;">北京婚纱摄影网</a>
+                    <a class="fl" href="javascript:;">北京婚纱摄影网</a>
+                    <a class="fl" href="javascript:;">北京婚纱摄影网</a>
+                </li>
+            </ul>
+            <div class="foot-link fl"></div>
+        </div>
+    </div>
+    <div class="ft">
+    	<div class="ft-end wrap">
+        	<ul>
+            	<li>
+                    <a href="javascript:;">北京婚纱摄影</a>
+                    <span>|</span>
+                    <a href="javascript:;">北京婚纱摄影</a>
+                    <span>|</span>
+                    <a href="javascript:;">北京婚纱摄影</a>
+                    <span>|</span>
+                    <a href="javascript:;">北京婚纱摄影</a>
+                    <span>|</span>
+                    <a href="javascript:;">北京婚纱摄影</a>
+                </li>
+                <li class="statistics">版权所有 ⓒ 2007-2012 北京蒙娜丽莎摄影有限公司 Map | Tag&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;站长统计</li>
+                <li><a href="javascript:;">北京蒙娜丽莎唯一官网：http://www.mnlsbj.com/</a> 京ICP备12018289号</li>
+                <li>热门推荐： 北京婚纱摄影、 北京婚纱影楼、 婚纱照或婚纱摄影外景，尽在蒙娜丽莎！ 网站技术、SEO优化支持：东辉创想</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

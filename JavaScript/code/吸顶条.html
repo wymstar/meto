@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{margin:0; padding:0;}
+p{height:150px; background:#ccc; margin:10px 0; font-size:30px; line-height:1.5}
+#div1{width:100%; left:0; top:0; height:150px; background:red;}
+#div2{height:150px; display:none;}
+</style>
+<script src="jquery-1.7.2.js"></script>
+<script>
+$(function (){
+	var top=$('#div1').offset().top;
+	$(window).scroll(function (){
+		var scrolltop=$(window).scrollTop();
+		if (top < scrolltop){
+			$('#div1').css('position','fixed');
+			$('#div2').css('display','block');
+		}
+		else{
+			$('#div1').css('position','');
+			$('#div2').css('display','none');		
+		}		
+	});	
+})
+/*window.onload=function (){
+	var oDiv1=document.getElementById('div1');
+	var oDiv2=document.getElementById('div2');
+	
+	var top=gettop(oDiv1).top;
+	window.onscroll=function (){
+		var scrolltop=document.documentElement.scrollTop || document.body.scrollTop;
+		if (top < scrolltop){
+			oDiv1.style.position='fixed';
+			oDiv2.style.display='block';	
+		}
+		else{
+			oDiv1.style.position='';
+			oDiv2.style.display='none';	
+		}	
+	};
+	
+	function gettop(obj){
+		var left=0;
+		var top=0;
+		while (obj){
+			left+=obj.offsetLeft;
+			top+=obj.offsetTop;
+			obj=obj.offsetParent;	
+		}
+		return {'left':left,'top':top};	
+	}	
+};*/
+</script>
+</head>
+
+<body>
+    <p></p>
+    <p></p>
+    <p>哦据欧是三个空间额哦哦盛世嫡妃看看的功夫急哦据欧是三个空间额哦哦盛世嫡妃看看的功夫急哦据欧是三个空间额哦哦盛世嫡妃看看的功夫急哦据欧是三个空间额哦哦盛世嫡妃看看的功夫急哦据欧是三个空间额哦哦盛世</p>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <p>sfdsfs sdhdgggd三等功到法国法律办理的vmlmvlcmvpvlqlmfkfsdmvlkdkl的功夫急哦据欧是三个空间额哦哦盛世嫡妃看看的功夫急哦据欧是三个空间额哦哦盛世嫡妃看看的功夫急嫡妃看看的功夫急哦据欧是三个空间额哦哦盛世嫡妃看看的功夫急哦据欧是三个空间额哦哦盛世嫡妃看看</p>
+    <p></p>
+    <p></p>
+    <p>fdsfs sdhdgggd三等功到法国法律办理的vmlmvlcmvpvlqlmfkfsdmvlkdkl的功夫急哦据欧是三个空间额哦哦盛世嫡妃看看的功夫急哦据欧是三个空间额哦哦盛世嫡妃看看的功夫急嫡妃看看的功夫急哦据欧是三个空间额哦哦盛世嫡妃看看的功夫急哦据欧是三个空间额哦哦盛世嫡妃看看</p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+</body>
+</html>

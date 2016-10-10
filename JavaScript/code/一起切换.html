@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+* { margin:0; padding:0; }
+input { position:absolute; left:100px; top:50px; width:100px; height:40px; }
+ul { overflow:hidden; width:510px; height:510px; border:2px solid red; margin:50px auto; }
+li { width:150px; height:150px; margin:10px; background:#ccc; float:left; list-style:none; opacity:1; line-height:150px; text-align:center; font-size:50px; font-weight:bold; }
+</style>
+<script src="move.js"></script>
+<script>
+window.onload=function (){
+	var oBtn=document.getElementById('btn');
+	var aLi=document.getElementsByTagName('li');
+	
+	//  布局转换
+	var aPos=[];
+	for (var i=0; i<aLi.length; i++)
+	{
+		var left=aLi[i].offsetLeft;
+		var top=aLi[i].offsetTop;
+		
+		aLi[i].style.left=left+'px';
+		aLi[i].style.top=top+'px';
+		
+		aPos.push({left:left, top:top});
+	}
+	
+	for (var i=0; i<aLi.length; i++)
+	{
+		aLi[i].style.position='absolute';
+		aLi[i].style.margin=0;
+	}
+	
+	// 测试
+	for (var i=0; i<aLi.length; i++)
+	{
+		aLi[i].innerHTML=i;
+	}
+	
+	// 点击
+	oBtn.onclick=function (){
+		var n=0;
+		var timer=setInterval(function (){
+			(function (index){
+				move(aLi[n], {top:0, left:0, width:0, height:0, opacity:0, lineHeight:0, fontSize:0}, {
+					duration:300,
+					complete:function (){
+						if (index == aLi.length-1)
+						{
+							// 最后一个运动完
+							end();
+						}
+					}
+				});
+			})(n);
+			n++;
+			
+			if (n == aLi.length)
+			{
+				clearInterval(timer);
+			}
+		}, 100);
+	};
+	
+	function end()
+	{
+		for (var i=0; i<aLi.length; i++)
+		{
+			aLi[i].style.background='red';
+		}
+		
+		var n=aLi.length-1;
+		var timer=setInterval(function (){
+			var left=aPos[n].left;
+			var top=aPos[n].top;
+			move(aLi[n], {left:left, top:top, width:150, height:150, lineHeight:150, opacity:1, fontSize:50}, {
+				duration:300
+			});
+			
+			n--;
+			
+			if (n == -1)
+			{
+				clearInterval(timer);
+			}
+		}, 100);
+	}
+};
+</script>
+</head>
+
+<body>
+	<input type="button" value="go" id="btn" />
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		
+		<li></li>
+		<li></li>
+		<li></li>
+		
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

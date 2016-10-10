@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+body { background:#000; font-size:50px; color:#fff; font-weight:bold; }
+span { opacity:0; }
+</style>
+<script src="move.js"></script>
+<script>
+window.onload=function (){
+	var str='“搞好经济、搞好企业、搞好国有企业，把实体经济抓上去。” 近日，中共中央总书记习近平在吉林考察调研时指出，把制造业搞上去，创新驱动发展是核心，中国梦具体到工业战线就是加快推进新型工业化。';
+	var aSpan=[];
+	
+	for (var i=0; i<str.length; i++)
+	{
+		var oSpan=document.createElement('span');
+		oSpan.innerHTML=str.charAt(i);
+		
+		document.body.appendChild(oSpan);
+		aSpan.push(oSpan);
+	}
+	
+	var n=0;
+	var timer=setInterval(function (){
+		move(aSpan[n], {opacity:1});
+		n++;
+		
+		if (n == aSpan.length)
+		{
+			clearInterval(timer);
+		}
+	}, 300);
+	
+	
+};
+</script>
+</head>
+
+<body>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

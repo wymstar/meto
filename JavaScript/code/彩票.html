@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+div{float:left;}
+input{background:red; color:#fff; width:50px; height:50px; font-size:20px; border:none; border-radius:100px; outline:none;}
+#int{background:blue; color:#fff; width:50px; height:50px; font-size:20px; border:none; border-radius:100px; outline:none; float:left; margin-left:8px;}
+#btn{background:#ccc; color:#fff; width:100px; height:50px; font-size:20px; border:none; border-radius:100px; outline:none; float:left; margin-left:8px;}
+</style>
+<script>
+window.onload=function (){
+	var oDiv=document.getElementById('div1');
+	var aInput=oDiv.getElementsByTagName('input');
+	var oInput=document.getElementById('int');
+	var oBtn=document.getElementById('btn');
+	show();
+	oBtn.onclick=show;
+	function show(){
+		var arr=[];
+		while(arr.length < 6)
+		{
+			var n=rnd(1,34);
+			if ( ! findInArr(arr,n)){
+				arr.push(n);	
+			}	
+		}
+		arr.sort(function (a,b){
+			return a-b;	
+		});
+		//var str=arr.join(' ');
+		for (var i=0; i<arr.length; i++){
+			if (arr[i] < 10){
+				arr[i]='0'+arr[i];
+			}
+			else{
+				arr[i]=''+arr[i];	
+			}	
+		}
+		for (var i=0; i<aInput.length; i++){
+			aInput[i].value=arr[i];	
+		}
+		var n1=rd(1,17);
+		oInput.value=toDub(n1 );
+		
+		function toDub(n){
+			return n<10 ? '0'+n : ''+n;	
+		}
+		
+		
+		function rd(a,b){
+			return Math.floor(Math.random()*(b-a)+a);	
+		}
+		
+		function rnd(n,m){
+			return Math.floor(Math.random()*(m-n)+n);	
+		}
+		function findInArr(arr,n){
+			for (var i=0; i<arr.length; i++){
+				if (arr[i] == n){
+					return true;	
+				}	
+			}
+			return false;
+		}
+	};
+};
+</script>
+</head>
+
+<body>
+	<div id="div1">
+		<input type="button" value="" />
+        <input type="button" value="" />
+        <input type="button" value="" />
+        <input type="button" value="" />
+        <input type="button" value="" />
+        <input type="button" value="" />
+    </div>
+    <input type="button" value="" id="int"/>
+    <input type="button" value="换一下" id="btn" />
+</body>
+</html>

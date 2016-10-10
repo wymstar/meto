@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+* { margin:0; padding:0; }
+.calendar { position:relative; width:280px; border:1px solid red; margin:100px auto; }
+.calendar span { display:block; height:40px; line-height:40px; text-align:center; font-size:28px; font-weight:bold; }
+.calendar ul, .calendar ol { overflow:hidden; }
+.calendar li { list-style:none; float:left; width:40px; height:40px; line-height:40px; font-size:25px; text-align:center; }
+.week { color:#f40; }
+.calendar .today { color:blue; font-size:16px; }
+.past { color:#999; }
+.calendar a { position:absolute; width:40px; height:40px; line-height:40px; text-align:center; text-decoration:none; }
+.calendar .prev { left:0; }
+.calendar .next { right:0; }
+</style>
+<script>
+window.onload=function (){
+	var oDiv=document.getElementById('calendar');
+	var oSpan=oDiv.getElementsByTagName('span')[0];
+	var oUl=oDiv.getElementsByTagName('ul')[0];
+	var now=0;
+	
+	// 本月
+	create();
+	
+	// 下个月
+	var oNext=oDiv.getElementsByClassName('next')[0];
+	oNext.onclick=function (){
+		now++;
+		create();
+	};
+	
+	// 上个月
+	var oPrev=oDiv.getElementsByClassName('prev')[0];
+	oPrev.onclick=function (){
+		now--;
+		create();
+	};
+	
+	function create()
+	{
+		oUl.innerHTML='';
+		
+		var oDate=new Date(); // ?
+		oDate.setMonth(oDate.getMonth()+now);
+		
+		var y=oDate.getFullYear();
+		var m=oDate.getMonth();
+		oSpan.innerHTML=y+'年'+toDub(m+1)+'月';
+		
+		// 空格
+		var oDate=new Date(); // ?
+		oDate.setMonth(oDate.getMonth()+now);
+		oDate.setDate(1);
+		var week=oDate.getDay();
+		(week==0) && (week=7);
+		for (var i=0; i<week-1; i++)
+		{
+			var oLi=document.createElement('li');
+			
+			oUl.appendChild(oLi);
+		}
+		
+		// 真实日期
+		var oDate=new Date(); // ?
+		oDate.setMonth(oDate.getMonth()+now);
+		oDate.setMonth(oDate.getMonth()+1, 1);
+		oDate.setDate(0);
+		var total=oDate.getDate();
+		for (var i=0; i<total; i++)
+		{
+			var oLi=document.createElement('li');
+			oLi.innerHTML=i+1;
+			
+			oUl.appendChild(oLi);
+		}
+		
+		// 周末
+		var aLi=oUl.children;
+		for (var i=0; i<aLi.length; i++)
+		{
+			if (i%7==5 || i%7==6)
+			{
+				aLi[i].className='week';
+			}
+		}
+		
+		// 今天
+		if (now == 0)
+		{
+			var oDate=new Date();
+			var today=oDate.getDate();
+			for (var i=0; i<aLi.length; i++)
+			{
+				if (aLi[i].innerHTML == today)
+				{
+					aLi[i].className='today';
+					aLi[i].innerHTML='今天';
+				}
+				else if (aLi[i].innerHTML < today)
+				{
+					aLi[i].className='past';
+				}
+			}
+		}
+		else if (now < 0)
+		{
+			for (var i=0; i<aLi.length; i++)
+			{
+				aLi[i].className='past';
+			}
+		}
+	}
+};
+
+
+
+function toDub(n)
+{
+	return n<10 ? '0'+n : ''+n;
+}
+</script>
+</head>
+
+<body>
+	<div class="calendar" id="calendar">
+		<a href="javascript:;" class="prev">←</a>
+		<a href="javascript:;" class="next">→</a>
+		<span>xxx年xxx月</span>
+		<ol>
+			<li>一</li>
+			<li>二</li>
+			<li>三</li>
+			<li>四</li>
+			<li>五</li>
+			<li class="week">六</li>
+			<li class="week">日</li>
+		</ol>
+		
+		<ul>
+		</ul>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

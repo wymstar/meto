@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{margin:0; padding:0;}
+div{width:310px; height:310px; float:left; margin:50px;}
+#div1{background:url(../images/m1.jpg) no-repeat; position:relative;}
+#div2{position:relative; overflow:hidden; display:none;}
+img{position:absolute; left:0; top:0;}
+p{width:100px; height:100px; background:rgba(0,0,0,0.5); position:absolute; left:0; top:0; display:none;}
+</style>
+<script>
+window.onload=function (){
+	var oDiv1=document.getElementById('div1');
+	var oDiv2=document.getElementById('div2');
+	var oImg=document.getElementById('img1');
+	var oP=document.getElementById('p1');
+	var nmaxl=0;
+	var nmaxt=0;
+	
+	oDiv1.onmouseover=function (){
+		oDiv2.style.display='block';
+		oP.style.display='block';
+		nmaxl=oDiv1.offsetWidth-oP.offsetWidth;
+		nmaxt=oDiv1.offsetHeight-oP.offsetHeight;
+		nmaxl1=oDiv2.offsetWidth-oImg.offsetWidth;
+		nmaxt1=oDiv2.offsetHeight-oImg.offsetHeight	
+	};
+	oDiv1.onmouseout=function (){
+		oDiv2.style.display='none';
+		oP.style.display='none';	
+	};
+	oDiv1.onmousemove=function (ev){
+		var oEvent=ev || event;
+		var left=oEvent.clientX-oDiv1.offsetLeft-oP.offsetWidth/2;
+		var top=oEvent.clientY-oDiv1.offsetTop-oP.offsetHeight/2;
+		
+		if (left < 0){
+			left=0;	
+		}
+		else if (left > nmaxl){
+			left=nmaxl;	
+		}
+		if (top < 0){
+			top=0;	
+		}
+		else if (top > nmaxt){
+			top=nmaxt;	
+		}
+		oP.style.left=left+'px';
+		oP.style.top=top+'px';
+		oImg.style.left=left/nmaxl*nmaxl1+'px';
+		oImg.style.top=top/nmaxt*nmaxt1+'px';		
+	};
+};
+</script>
+</head>
+
+<body>
+	<div id="div1">
+    	<p id="p1"></p>
+    </div>
+    <div id="div2">
+    	<img id="img1" src="../images/b1.jpg" alt="" />
+    </div>
+</body>
+</html>

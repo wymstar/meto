@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{margin:0; padding:0;}
+li{list-style:none; position:absolute; left:0; top:0; padding-left:20px;}
+img{display:block;}
+ul{width:920px; height:305px; border:1px solid red; margin:50px auto; position:relative; overflow:hidden;}
+span{width:20px; height:100%; position:absolute; left:0; top:0;}
+</style>
+<script src="move.js"></script>
+<script>
+window.onload=function (){
+	var aLi=document.getElementsByTagName('li');
+	var aSpan=document.getElementsByTagName('span');
+	var LiW=aLi[0].offsetWidth;
+	var sW=aSpan[0].offsetWidth;
+	
+	for (var i=0; i<aLi.length; i++){
+		if (i != 0){
+			aLi[i].style.left=LiW+(i-1)*sW+'px';	
+		}	
+	}
+	for (var i=0; i<aLi.length; i++){
+		(function (index){
+			aLi[i].onmouseover=function (){
+				for (var i=0; i<aLi.length; i++){
+					if (index >= i){
+						//aLi[i].style.left=i*sW+'px';
+						move(aLi[i],{'left':i*sW});	
+					}
+					else{
+						//aLi[i].style.left=LiW+(i-1)*sW+'px';	
+						move(aLi[i],{'left':LiW+(i-1)*sW});
+					}	
+				}	
+			};	
+		})(i);	
+	}
+	
+};
+</script>
+</head>
+
+<body>
+	<ul>
+    	<li>
+        	<span style="background:#096">第一项</span>
+            <img src="../images/55.jpg" width='840' height='305' alt="" />
+        </li>
+        <li>
+        	<span style="background:#C00">第二项</span>
+            <img src="../images/66.jpg" width='840' height='305' alt="" />
+        </li>
+        <li>
+        	<span style="background:#06F">第三项</span>
+            <img src="../images/88.jpg" width='840' height='305' alt="" />
+        </li>
+        <li>
+        	<span style="background:#F0C">第四项</span>
+            <img src="../images/99.jpg" width='840' height='305' alt="" />
+        </li>
+    </ul>
+</body>
+</html>

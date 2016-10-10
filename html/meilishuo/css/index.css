@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0; padding:0;}
+a{text-decoration:none;}
+.clearFix:after{content:''; clear:both; display:block;}
+.clearFix{zoom:1;}
+li{list-style:none;}
+.fr{float:right;}
+.fl{float:left;}
+.mt20{margin-top:20px;}
+.ml20{margin-left:20px;}
+body{color:#666; font-size:12px;}
+
+
+/*头部开始*/
+.header{border-top:1px solid #eee; border-bottom:1px solid #eee; background:#f5f5f5; height:38px;}
+.wrapper{width:1200px; margin:0 auto; overflow:hidden; }
+.hd-box{margin-right:-1px; padding-top:10px;}
+.hd-box li{height:18px; border-right:1px dashed #cbcbcb; line-height:18px; padding: 0 15px;}
+.hd-box .a1{ width:16px; height:16px; background:url(../images/weixin.png) no-repeat; margin-right:4px;}
+.hd-box .a2{ width:16px; height:16px; background:url(../images/qq.png) no-repeat; margin-right:4px;}
+.hd-box .a3{ width:16px; height:16px; background:url(../images/gouwuche.png) no-repeat; margin-right:4px;}
+.hd-box .a4{ width:16px; height:16px; background:url(../images/dingdan.png) no-repeat; margin-right:4px;}
+.hd-box .a5{ width:16px; height:16px; background:url(../images/iphone.png) no-repeat; margin-right:4px;}
+.hd-box li a{color:#666;}
+.logo h1{text-indent:-9999em; background:url(../images/logo.png) no-repeat; width:106px; height:36px; margin-top:15px;}
+.logo img{margin-left:254px; margin-top:17px;}
+/*头部结束*/
+
+/* 导航开始*/
+.nav{ height:40px; background:#ff6599; margin-top:38px;}
+.nav .ul2{ width:1064px; margin:0 auto; padding-left:136px;}
+.nav .ul2 li{ float:left; line-height:40px; font-size:14px; font-weight:bold;}
+.nav .ul2 .li1{ background:#ed3577;}
+.nav .ul2 .li2{ background:url(../images/nav1.png) no-repeat 49px; }
+.nav .ul2 .li3{ background:url(../images/nav1.png) no-repeat 89px; }
+.nav .ul2 li a{ display:block; padding:0 15px 0 14px; color:#fff;}
+.nav .ul2 li:hover{ background:#ed3577;}
+/* 导航结束*/
+
+/*内容开始*/
+.sidebar{width:238px; border:1px solid #ccc; height:572px;}
+.sidebar-list{height:103px; padding:12px 20px 0; position:relative;}
+.sidebar-list-tit{background:url(../images/bj1.png) no-repeat; padding-left:23px; font-size:16px; color:#f69;}
+.sidebar-list ul{border-bottom:1px dashed #ccc; margin-top:12px; width:198px;}
+.sidebar-list ul li{margin-right:14px; margin-bottom:10px;}
+.sidebar-list a{color:#666;}
+.sidebar-list bbd{boeder-bottom:0px;}
+.pic-r{position:absolute; right:16px; top:50%; margin-top:-7px; font-size:14px;}
+.sidebar .colorf69{color:#f69;}
+
+.banner{width:960px;}
+.banner img{display:block;}
+.banner-top-left{ border-bottom:1px solid #ccc; width:760px;}
+.banner-top-left img{width:760px; height:419px;}
+.banner-top-right img{width:200px; height:139px; border-bottom:1px solid #ccc;}
+.banner-bottom{padding:10px 0 0 11px;}
+.banner-bottom img{width:175px; height:142px; margin-right:10px; border:1px solid #ccc;}
+.banner-bottom .w198{width:198px; margin-right:0; margin-left:1px;}
+/*内容结束*/
+
+/*商品开始*/
+
+.wel-list{ width:1224px; padding-top:15px; }
+.wel-list li{ width:180px; margin-right:24px; height:384px; }
+.wel-list .l-1{height:36px;}
+.wel-list li p a{ line-height:18px; margin-top:6px; display:block; margin-bottom:7px; }
+.wel-list li div{ border-bottom:1px dotted #ccc; padding-bottom:12px; margin-bottom:10px; }
+.wel-list li div span{ color:#f69; font-size:16px; }
+.wel-list li div i{ font-style:normal; font-size:9px; text-decoration:line-through; }
+.hd{ border-bottom:1px solid #ccc; padding-bottom:6px; }
+.wel-hd{ background:url(../images/wel_ico2.png) no-repeat; width:158px; height:26px; }
+.hd span{ color:#999; font-size:14px; margin-top:5px; border-left:1px dotted #ccc; margin-left:14px; padding-left:9px; }
+.hd span b{ color:#666; }
+.hd a{ color:#999; font-size:14px; }
+.wel-hd-2{ background:url(../images/wel_ico2.png) no-repeat; width:158px; height:26px; }
+
+
+.attr-box{ border-bottom:1px solid #ccc; height:611px; }
+.attr-box-left{ width:940px; }
+.attr-box-left li{ position:relative; width:180px; margin-right:5px; margin-bottom:5px; }
+.attr-box-left img{ width:180px; height:254px; }
+.attr-box-left p{ position:absolute; left:0; bottom:0px; height:34px; line-height:34px; background:url(../images/pos_bg.png) repeat-x; width:180px; color:#FFF; text-align:center; }
+.attr-box-left-bottom{ padding-top:13px; margin-left:-1px; }
+.attr-box-left dl{ border-left:1px dotted #ccc; padding-left:12px; height:44px; }
+.attr-box-left dt{ line-height:44px; margin-right:18px; }
+.attr-box-left dd{ width:250px; line-height:22px; }
+
+
+.attr-box-right{ width:259px; height:611px; border-left:1px solid #ccc; }
+.attr-box-right-tit h4{ color:#666; font-size:16px; }
+.attr-box-right-tit a{ color:#999; font-size:14px; }
+.attr-box-right li{ height:48px; border-bottom:1px dashed #ccc; padding-top:14px; }
+.attr-box-right-img{ margin-right:12px; }
+.attr-box-right img{ border:1px solid #ccc;}
+.attr-box-right ul{ margin-top:7px; }
+.attr-box-right li div a{ margin-bottom:10px; display:block; }
+
+
+.hd .tr{border-right:1px dotted #ccc; padding:0 13px;}
+.hd .tl{padding-left:13px;}
+.b-1{ width:1230px;}
+.b-1 .b-1-li{width:200px; height:258px; border:1px solid #ccc; margin:15px 15px 20px 0; padding:12px 13px 13px;}
+.b-1-li h3{ font-size:14px;}
+.b-1-li .b-1-a{ padding-top:17px;}
+.b-1-a .b-1-r{ float:right; padding:4px 8px; background:#ff6699; color:#fff;}
+/*商品结束*/
+
+/*底部开始*/
+.bottom-box{border-top:1px solid #ddd; background:#f6f6f6; height:311px;}
+.ip{background:url(../images/ip.png) no-repeat; width:36px; height:36px; margin-top:34px; margin-right:12px;}
+.time h2{font-size:16px; margin-top:33px; margin-bottom:10px;}
+.time p{margin-bottom:14px;}
+.bottom-box li h2{font-size:16px; margin-top:29px; margin-bottom:18px;}
+.bottom-box li p{margin-bottom:12px;}
+.bottom-box li a{color:#666;}
+.bottom-box li{margin-left:55px;}
+.bottom-box .xl{background:url(../images/xlwb.png) no-repeat; height:16px; padding-left:19px;}
+.bottom-box .kj{background:url(../images/qqkongjian.png) no-repeat; height:16px; padding-left:19px;}
+.bottom-box .tx{background:url(../images/txwb.png) no-repeat; height:16px; padding-left:19px;}
+.bottom-1{border-top:1px solid #e6e6e6; border-bottom:1px solid #e6e6e6; height:30px; margin-top:15px; margin-bottom:14px;}
+.bottom-2 div{margin:8px 0 8px 10px; }
+.bottom-2 div a{color:#666; margin-left:2px;}
+.bottom-3{margin-right:10px;}
+.bottom-4{margin-bottom:8px;}
+.bottom-5{margin-bottom:20px;}
+.bottom-5 a{color:#666;}
+/*底部结束*/
